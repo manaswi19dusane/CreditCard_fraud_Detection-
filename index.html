@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Credit Card Fraud Detection</title>
+</head>
+<body>
+    <h2>Credit Card Fraud Detection</h2>
+    <form action="/predict" method="post">
+        Time: <input type="text" name="Time"><br>
+        Amount: <input type="text" name="Amount"><br>
+        V1: <input type="text" name="V1"><br>
+        V2: <input type="text" name="V2"><br>
+        V3: <input type="text" name="V3"><br>
+        V4: <input type="text" name="V4"><br>
+        V5: <input type="text" name="V5"><br>
+        V6: <input type="text" name="V6"><br>
+        V7: <input type="text" name="V7"><br>
+        V8: <input type="text" name="V8"><br>
+        V9: <input type="text" name="V9"><br>
+        V10: <input type="text" name="V10"><br>
+        V11: <input type="text" name="V11"><br>
+        V12: <input type="text" name="V12"><br>
+        V13: <input type="text" name="V13"><br>
+        V14: <input type="text" name="V14"><br>
+        V15: <input type="text" name="V15"><br>
+        V16: <input type="text" name="V16"><br>
+        V17: <input type="text" name="V17"><br>
+        V18: <input type="text" name="V18"><br>
+        V19: <input type="text" name="V19"><br>
+        V20: <input type="text" name="V20"><br>
+        V21: <input type="text" name="V21"><br>
+        V22: <input type="text" name="V22"><br>
+        V23: <input type="text" name="V23"><br>
+        V24: <input type="text" name="V24"><br>
+        V25: <input type="text" name="V25"><br>
+        V26: <input type="text" name="V26"><br>
+        V27: <input type="text" name="V27"><br>
+        V28: <input type="text" name="V28"><br><br>
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction_text %}
+        <h3>{{ prediction_text }}</h3>
+    {% endif %}
+</body>
+</html>
